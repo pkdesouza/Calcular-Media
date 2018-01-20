@@ -1,0 +1,58 @@
+body{
+    background: url('img/default.jpg')no-repeat;}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    
+}
+td input{
+    width: 100%;
+    margin:auto;
+}
+
+table{
+    margin-left: 115px
+}
+
+#totalScreen{
+    width: 100%;
+    margin: auto;
+    display: block;
+
+    
+}
+
+
+
+header img{
+    margin:auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+.botao{
+    float:right;
+    margin:20px 50px 0px 0px;
+}
+#nota_pf{
+    display: none;
+}
+#resultado{
+    margin-top:120px;
+}
+h3,h4{
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    font-size: 18pt!important;
+    
+    
+}

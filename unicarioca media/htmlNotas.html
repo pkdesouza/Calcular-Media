@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    
+<link  rel="stylesheet" type="text/css" href="cssNotas.css" >
+<link  rel="stylesheet" type="text/css" href="bootstrap.min.css" >
+    <script src="javascript.js"></script>
+
+    
+</head>
+    
+<body>
+    <div class="container">
+
+    <header>
+      <img src="img/unirio.png" alt="unicarioca">
+      <h1 class=" align-center">Calcule sua nota</h1>
+    </header>
+        
+    <div class="well">
+      <div class="row">
+        <h4 class="text-center text-danger bold" id="info">Caso a média da AV1 e AV2 seja maior ou igual a 7, você passou direto.</h4>
+
+        <div class="col-md-12 myDiv">
+          <table class="col-8">
+            <tr>
+              <th>Prova 1</th>
+              <th>Prova 2</th> 
+              <th>Media</th>
+            </tr>
+            <tr>
+              <td class="col-3">
+                  <input id="p1" style="width:100%" type="number" name="nota 1" min="1" max="4" required></td>
+              <td class="col-3">
+                  <input id="p2" style="width:100%" type="number" name="nota 1" min="1" max="4" required></td>
+              <td class="col-3" id="media"></td>
+           
+            </tr>
+          </table>
+          <input onclick="validar()" type="button" class="btn botao btn-success" value="Resultado">
+          <input onclick="location.reload()" type="button" class="btn botao btn-default" value="Limpar">
+        </div>
+      </div>
+      <div id="nota_pf" class="row">
+        <h3 class="text-center" id="final"></h3>
+        
+        <table class="col-4" >
+          <tr>
+            <th>Prova Final</th>
+            <th>Média Final</th>
+          </tr>
+          <tr>
+            <td><input type="number" id="pf" name="notaf" min="0" step="any" max="10" required></td>
+            <td><input type="number" id="mf" name="notaf" min="0" step="any" max="10" disabled></td>
+          </tr>
+        </table>
+
+     
+      </div>
+     <div id="resultado">
+        <h3 id="apr" class="text-center text-success"></h3>
+        <h3 id="repr" class="text-center text-danger"></h3>       
+    </div>
+                                  
+    </div>
+                  
+      
+    </div>
+
+  </body>
+</html>
